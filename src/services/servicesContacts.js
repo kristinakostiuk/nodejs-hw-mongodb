@@ -2,7 +2,6 @@ import { ContactsCollection } from "../db/models/modelsContacts.js";
 
 export const getAllContacts = async () => {
     const contacts = await ContactsCollection.find();
-    console.log('Contacts found:', contacts);
     return contacts;
  };
 
